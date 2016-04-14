@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Primo</title>
+	<script type="text/javascript">
+		function sol(){
+			num = document.pri.num.value;
+			x1="Es primo";
+			x2="No es Primo";
+			if(num == 1 || num ==2 || num==3){
+				document.pri.x1.value = x1;
+			}
+			else{
+				contador=1;
+				for(i=2;i<=num;i++){
+					if(num % i ==0){
+						contador++;
+					}
+				}
+				if(contador == 2){
+					document.pri.x1.value = x1;
+				}
+				else{
+					document.pri.x2.value = x2;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name = "pri">
+		<input type = "text" name = "num" size = "4"> NUMERO <BR><BR>
+		<input type = "text" name = "x1" size = "8"><BR><BR>
+		<input type = "text" name = "x2" size = "8"><BR><BR>
+		<input type = "button" value="Click" onclick="sol()">
+	</form>
+</body>
+</html>
