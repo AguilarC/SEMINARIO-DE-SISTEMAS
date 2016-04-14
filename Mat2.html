@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Ecuacion De Segundo Grado</title>
+	<script type="text/javascript">
+		function res(){
+			a = document.valor.a.value;
+			b = document.valor.b.value;
+			c = document.valor.c.value;
+			d = b*b-4*a*c;
+			x1 = (-b-Math.sqrt(d))/(2*a);
+			x2 = (-b+Math.sqrt(d))/(2*a);
+			document.valor.x1.value = x1;
+			document.valor.x2.value = x2;
+		}
+	</script>
+</head>
+<body>
+	<form name="valor">
+		<input type= "text" name="a" size="4"> x2 +
+		<input type= "text" name="b" size="4"> x +
+		<input type= "text" name="c" size="4"> c = 0
+		<br><br>
+		x1 = <input type= "text" name="x1" size="4"> <br><br>
+		x2 = <input type= "text" name="x2" size="4"> <br><br>
+		<input type= "button" value="Resolver" onClick="res()">
+	</form>
+</body>
+</html>
