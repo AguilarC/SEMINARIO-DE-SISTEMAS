@@ -4,26 +4,23 @@
 	<title>Primo</title>
 	<script type="text/javascript">
 		function sol(){
-			num = document.pri.num.value;
-			x1="Es primo";
-			x2="No es Primo";
-			if(num == 1 || num ==2 || num==3){
-				document.pri.x1.value = "es primo";
-			}
-			else{
-				contador=1;
-				for(i=2;i<=num;i++){
-					if(num % i ==0){
-						contador++;
+			n=100;
+			c=1;
+			p=2;
+			d=2;
+			while(c<=n){
+				if(p%d==0){
+					if(p==d){
+						document.write(p + " --- ");
+						c++;
 					}
+					d=2;
+					p++;
 				}
-				if(contador == 2){
-					document.pri.x1.value = "es primo";
-				}
-				else{
-					document.pri.x1.value = "no es primo";	
-				}
+				else
+					d++;
 			}
+
 		}
 	</script> 
 </head>
@@ -32,15 +29,10 @@
 		<div  style="background-color:black;padding:10px;width:350" align="center">
 			<h1><font color="white">Numeros Primos</font></h1>
 		</div >
-		<div align="center" style="background-color:yellow;color:orange;padding:10px;width:350px">
-		<form name = "pri">
-			<input type = "text" name = "num" size = "4" style="background-color:skyblue;color:white"> NUMERO <BR><BR>
-			<input type = "text" name = "x1" size = "8" style="background-color:red;color:white"><BR><BR>
-			<!--<input type = "text" name = "x2" size = "8"><BR><BR>-->
-			<input type = "button" value="Click" onclick="sol()">
-			<input  type="button"  value="Reset" onclick="document.location.reload();">
-		</form>
-		</div>
-	</center>
+		<div>
+			<form name = "pri">	
+				<input type = "button" value="Click-Aqui" onclick="sol()" style="font-size:70px" >
+			</form>
+		</center>
 </body>
 </html>
