@@ -16,14 +16,28 @@
 	</script>
 </head>
 <body>
-	<form name="valor">
-		<input type= "text" name="a" size="4"> x2 +
-		<input type= "text" name="b" size="4"> x +
-		<input type= "text" name="c" size="4"> c = 0
-		<br><br>
-		x1 = <input type= "text" name="x1" size="4"> <br><br>
-		x2 = <input type= "text" name="x2" size="4"> <br><br>
-		<input type= "button" value="Resolver" onClick="res()">
-	</form>
-</body>
+	<center>
+	<div style="background-color:skyblue;padding:3px;width:700px">
+		<h1 style="font-size:42px">
+			<font color="green">
+				Ecuacion de Segundo Grado
+			</font>
+		</h1>
+	</div>
+	<div style="background-color:yellow;padding:12px;width:680px">
+		<form name="valor">
+			<h1 style="color:blue" >
+				<input type= "text" name="a" size="4"> x2 +
+				<input type= "text" name="b" size="4"> x +
+				<input type= "text" name="c" size="4"> c = 0
+				<br><br>
+				x1 = <input type= "text" name="x1" size="4"> <br>
+				x2 = <input type= "text" name="x2" size="4"> <br><br>
+			</h1>
+			<input type= "button" value="Resolver" onClick="res()">
+			<input  type="button"  value="Reset" onclick="document.location.reload();">
+		</form>
+	</div>
+</center>
+	</body>
 </html>
